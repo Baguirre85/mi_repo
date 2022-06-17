@@ -12,56 +12,81 @@
 
 <body>
 
-    <header>
-        <div class="encabezado">
-            <div class="buscar">Buscar</div>
-            <div class="title">
-                <h1>M&B</h1>
-            </div>
-            <div class="carrito">Carrito</div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./combos.html">Combos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-
+   <body>
+     <header>            
+             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+            <h1 class="titulo">M&B</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
     </header>
+        
+    <section class="fondo-myb"> 
+        <div class="contenido-myb">
+        
+            <div class="ubicacion">
+                <img src="/imagenes/logo.png" alt="">
+                <h2>Impresiones 3D</h2>
+               <p>Pilar, Buenos Aires</p>
+             </div>
+        
+        
+        </div>
+    </section>
+        <div class="nav-bg">
+              <nav class="navegacion-principal contenedor">
+                <a href="/index.html">Inicio</a>
+                <a href="/html/productos.html">Productos</a>
+                <a href="/html/combos.html">Combos</a>
+                <a href="/html/contacto.html">Contacto</a>
+                <a href="/html/nosotros.html">Nosotros</a>
+            </nav>
+        </div>
+
     <main>
         <section>
             <article>
                 <div class="contacto">
-                    <form action="#" method="GET" enctype="multipart/form-data">
-                        <fieldset>
-                            <legend>Contactenos</legend>
-                            <label for="nombre">Nombre</label>
-                            <input for="nombre" type=" text " placeholder="Ingrese su Nombre">
-                            <br>
+                 <Form class="formulario">
+            <fieldset>
+             
+                <legend>CONTACTANOS</legend>  
+                    
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                      <input class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+                     
+                    <div class="campo">
+                       <label>Telefono</label>
+                     <input class="input-text" type="tel" placeholder="Telefono">
+                    </div>
 
-                            <label for="apellido ">Apellido</label>
-                            <input for="apellido" type=" text " placeholder="Ingrese su Apellido">
+                    <div class="campo">
+                      <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu Email">
+                    </div>
 
-                            <br>
-                            <label for="mail ">Mail</label>
-                            <input for="mail" type="email" placeholder="Ingrese su mail ">
+                    <div class="campo">
+                    <label>Mensajes</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </div><!--Contenedor-campos-->
 
-                            <br>
-                            <label for="telefono ">Telefono</label>
-                            <input for="telefono " type=" number " placeholder="Ingrese su Telefono ">
-
-                            <br>
-                            <label for="comentario">Comentario</label>
-                            <input for="comentario" type=" text " placeholder="Ingrese su comentario">
-
-                            <br>
-                            <input name="enviar" type="submit" value="enviar">
-
-                        </fieldset>
-                    </form>
+                    <div>
+                        <Input class="boton" type="submit" value:"Enviar">
+                    </div>
+            </fieldset>
+         </Form>
                 </div>
             </article>
         </section>
